@@ -70,7 +70,6 @@ header nav .menu li {
   line-height: 80px;
   margin: 0 5px;
   animation: rotate-scale-down-ver 0.65s linear both;
-  animation-delay: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   header nav .menu li {
