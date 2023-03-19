@@ -58,14 +58,15 @@ header{
                 display: inline-block;
                 line-height: 80px;
                 margin: 0 5px;
-
                 @include tablet{
                     display: flex;
                     flex-direction: column;
                     margin: 20px 0;
                     line-height: 30px;
                 }
-
+                -webkit-animation: rotate-scale-down-ver 0.65s linear both;
+	            animation: rotate-scale-down-ver 0.65s linear both;
+                animation-delay: .3s;
                 @include mobile{
                     margin: 10px 0;
                     line-height: 30px;
@@ -81,6 +82,7 @@ header{
                     transition: all;
                     transform-origin:left;
                     transition-duration: 3s;
+
 
                     &.active, &:hover{
                         border-bottom: solid 3px var(--color-verde);
@@ -182,9 +184,45 @@ header{
             }
         }
       
-
+        @for $item from 1 through 5 {
+            li:nth-child(#{$item}) {
+                animation-delay: $item*0.3s;
+            }
+            
+        }
     }
         
  }
+
+
+ @-webkit-keyframes rotate-scale-down-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateY(180deg);
+              transform: scale(0.5) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+  @keyframes rotate-scale-down-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateY(180deg);
+              transform: scale(0.5) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+  
 
  
