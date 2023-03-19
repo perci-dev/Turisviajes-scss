@@ -5,25 +5,25 @@ body{
 
 .seccion-principal__servicios{
     height: 100vh;
-    background-image: url(../../img/fondo-servicios.jpg); 
+    background-image: url(../img/fondo-servicios.jpg); 
     background-size: cover;
 }
 
 .seccion-principal__nosotros{
     height: 100vh;
-    background-image: url(../../img/fondo-nosotros.jpg); 
+    background-image: url(../img/fondo-nosotros.jpg); 
     background-size: cover;
 }
 
 .seccion-principal__galeria{
     height: 100vh;
-    background-image: url(../../img/fondo-galeria.jpg); 
+    background-image: url(../img/fondo-galeria.jpg); 
     background-size: cover;
 }
 
 .seccion-principal__contacto{
     height: 100vh;
-    background-image: url(../../img/Fondo-contacto.jpg); 
+    background-image: url(../img/Fondo-contacto.jpg); 
     background-size: cover;
 }
 /*sección principal inicio*/
@@ -41,7 +41,6 @@ body{
     text-shadow: 2px 0px 5px 0px #6a6a6a;    
 
     @include tablet{
-        
             font-size: 3rem;
         
     }
@@ -58,7 +57,7 @@ body{
 
     .seccion-principal{
         height: 100vh;
-        background-image: url(../../img/fondo-inicio.jpg); 
+        background-image: url(../img/fondo-inicio.jpg); 
         background-size: cover;
 
         .color-transparente{
@@ -127,6 +126,7 @@ body{
             @keyframes vuelo{
                 from{
                     left:0;
+                    top: 20%;
                     @include tablet{
                         left: 0%;
                         top: 20%;
@@ -148,7 +148,7 @@ body{
                 width: 255.5px;
                 height: 220.5px;
                 left: 0;
-                top: 0;
+                top: 10%;
                 animation-name: vuelo;
                 animation-duration: 6s;
                 animation-iteration-count:infinite;
