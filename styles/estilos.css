@@ -226,11 +226,23 @@ body {
   background-image: url(../img/fondo-servicios.jpg);
   background-size: cover;
 }
+@media screen and (max-width: 1024px) {
+  .seccion-principal__servicios {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
 .seccion-principal__nosotros {
   height: 100vh;
   background-image: url(../img/fondo-nosotros.jpg);
   background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .seccion-principal__nosotros {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .seccion-principal__galeria {
@@ -238,11 +250,23 @@ body {
   background-image: url(../img/fondo-galeria.jpg);
   background-size: cover;
 }
+@media screen and (max-width: 1024px) {
+  .seccion-principal__galeria {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
 .seccion-principal__contacto {
   height: 100vh;
   background-image: url(../img/Fondo-contacto.jpg);
   background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .seccion-principal__contacto {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /*sección principal inicio*/
@@ -275,6 +299,12 @@ body {
   height: 100vh;
   background-image: url(../img/fondo-inicio.jpg);
   background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .container-principal .seccion-principal {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .container-principal .seccion-principal .color-transparente {
   position: absolute;

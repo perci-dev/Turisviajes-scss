@@ -7,24 +7,44 @@ body{
     height: 100vh;
     background-image: url(../img/fondo-servicios.jpg); 
     background-size: cover;
+
+    @include tablet {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
+    
 }
 
 .seccion-principal__nosotros{
     height: 100vh;
     background-image: url(../img/fondo-nosotros.jpg); 
     background-size: cover;
+    @include tablet {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 .seccion-principal__galeria{
     height: 100vh;
     background-image: url(../img/fondo-galeria.jpg); 
     background-size: cover;
+    @include tablet {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 .seccion-principal__contacto{
     height: 100vh;
     background-image: url(../img/Fondo-contacto.jpg); 
     background-size: cover;
+    @include tablet {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 /*sección principal inicio*/
 .referente{
@@ -59,6 +79,10 @@ body{
         height: 100vh;
         background-image: url(../img/fondo-inicio.jpg); 
         background-size: cover;
+        @include tablet {
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
         .color-transparente{
             position: absolute;
