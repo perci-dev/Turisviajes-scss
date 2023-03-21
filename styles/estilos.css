@@ -374,8 +374,8 @@ body {
     top: 20%;
     @media screen and (max-width: 1024px) {
       .container-principal .seccion-principal .color-transparente {
-        left: 0%;
-        top: 20%;
+        right: 0%;
+        bottom: 20%;
       }
     }
   }
@@ -384,9 +384,8 @@ body {
     width: 75%;
     @media screen and (max-width: 1024px) {
       .container-principal .seccion-principal .color-transparente {
-        left: 100%;
-        width: 75%;
-        top: 60%;
+        right: 100%;
+        bottom: 60%;
       }
     }
   }
@@ -396,7 +395,7 @@ body {
   width: 255.5px;
   height: 220.5px;
   left: 0;
-  top: 10%;
+  top: 20%;
   animation-name: vuelo;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -404,13 +403,18 @@ body {
 @media screen and (max-width: 1024px) {
   .container-principal .seccion-principal .color-transparente .vuelo {
     position: absolute;
-    width: 255.5px;
-    height: 220.5px;
+    width: 50.5px;
+    height: 50.5px;
     left: 0%;
-    top: 20%;
+    bottom: 0%;
     animation-name: vuelo;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-principal .seccion-principal .color-transparente .vuelo {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -423,7 +427,8 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .container-principal .seccion-principal .color-transparente .vuelo img {
-    max-width: 20%;
+    transform: rotate(180deg);
+    width: 10%;
   }
 }
 .container-principal .contenedor {

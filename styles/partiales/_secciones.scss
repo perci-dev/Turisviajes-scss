@@ -152,8 +152,8 @@ body{
                     left:0;
                     top: 20%;
                     @include tablet{
-                        left: 0%;
-                        top: 20%;
+                        right: 0%;
+                        bottom: 20%;
                     }
                 }
                 to{
@@ -161,9 +161,9 @@ body{
                     width: 75%;
 
                     @include tablet{
-                        left:100%;
-                        width: 75%;
-                        top: 60%;
+                        right:100%;
+                        
+                        bottom: 60%;
                     }
                 }
             }
@@ -172,22 +172,24 @@ body{
                 width: 255.5px;
                 height: 220.5px;
                 left: 0;
-                top: 10%;
+                top: 20%;
                 animation-name: vuelo;
                 animation-duration: 6s;
                 animation-iteration-count:infinite;
 
                 @include tablet{
                     position: absolute;
-                    width: 255.5px;
-                    height: 220.5px;
+                    width: 50.5px;
+                    height: 50.5px;
                     left: 0%;
-                    top: 20%;
+                    bottom: 0%;
                     animation-name: vuelo;
                     animation-duration: 6s;
                     animation-iteration-count:infinite;
                 }
-
+                @include tablet{
+                    display:none;
+                }
                 @include mobile{
                     display:none;
                 }
@@ -195,7 +197,8 @@ body{
                     width: 50%;
 
                     @include tablet{
-                        max-width: 20%;
+                        transform: rotate(180deg);
+                        width: 10%;
                     }
 
                 }
