@@ -329,6 +329,10 @@ body {
   border: 0 #000;
   cursor: pointer;
 }
+.container-principal .seccion-principal .color-transparente .btn-buscar:hover{
+                    background-color: green;
+                    color:#fff;
+                }
 @media screen and (max-width: 768px) {
   .container-principal .seccion-principal .color-transparente .btn-buscar {
     display: none;
