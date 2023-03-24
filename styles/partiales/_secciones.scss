@@ -106,6 +106,10 @@ body{
                 box-shadow: 3px 0 5px 1px #d9d9d9;
                 border: 0 #000;
                 cursor: pointer; 
+                &:hover{
+                    background-color: green;
+                    color:#fff;
+                }
 
                 @include mobile{
                     display: none;
